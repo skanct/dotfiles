@@ -1,0 +1,17 @@
+[user]
+name = Christos Kanellopoulos
+email = christos.kanellopoulos@geant.org
+signingkey = C7CD0E445A2C70841B90F7F0D5AFFF3526738010
+
+[core]
+editor = nvim
+
+[commit]
+
+[init]
+defaultBranch = main
+
+[diff "ansible-vault"]
+textconv = ansible-vault view
+# Do not cache the vault contents
+cachetextconv = false

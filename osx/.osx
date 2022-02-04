@@ -36,6 +36,9 @@ fi
 # General UI/UX                                                               #
 ###############################################################################
 
+# Prefer tabs always 
+defaults write NSGlobalDomain AppleWindowTabbingMode -string always
+
 # Disable moust "natural" scroll direction 
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
@@ -167,7 +170,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 
-# Use column view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `Nlsv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
@@ -184,7 +186,7 @@ defaults write com.apple.dock autohide -bool true
 # Put the Dock on the left side
 defaults write com.apple.dock orientation -string left
 
-# Put the Dock on the left side
+# Disable animation
 defaults write com.apple.dock launchanim -bool false
 
 # Do not show process indicators in the Dock
@@ -221,13 +223,13 @@ defaults write com.apple.universalaccess reduceTransparency -bool true
 # 11: Launchpad
 # 12: Notification Center
 # Bottom right screen corner → Mission Control
-defaults write com.apple.dock wvous-br-corner -int 2
+defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 # Top right screen corner → Put display to sleep
-defaults write com.apple.dock wvous-tr-corner -int 10
+defaults write com.apple.dock wvous-tr-corner -int 0
 defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Desktop
-defaults write com.apple.dock wvous-bl-corner -int 4
+defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################

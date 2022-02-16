@@ -80,4 +80,4 @@ autoload edit-command-line; zle -N edit-command-line
 export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
-
+export PATH="/usr/local/sbin:$PATH"

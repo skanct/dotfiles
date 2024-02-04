@@ -27,21 +27,3 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 # receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
-case "$(uname -s)" in
-
-Darwin)
-	# echo 'Mac OS X'
-	alias ls='ls -G'
-	;;
-
-Linux)
-	alias ls='ls --color=auto'
-	;;
-
-CYGWIN* | MINGW32* | MSYS* | MINGW*)
-	# echo 'MS Windows'
-	;;
-*)
-	# echo 'Other OS'
-	;;
-esac

@@ -2,9 +2,9 @@
 
 # Mac OS X configuration
 #
-# This configuration applies to the latest version of macOS (currently 11.3),
-# and sets up preferences and configurations for all the built-in services and
-# apps. Third-party app config should be done elsewhere.
+# This configuration applies to macOS and sets up preferences and configurations
+# for all the built-in services and apps. Third-party app config should be done
+# elsewhere.
 #
 # Options:
 #   --no-restart: Don't restart any apps or services after running the script.
@@ -21,6 +21,7 @@
 # @see: https://github.com/herrbischoff/awesome-macos-command-line
 #
 # @author Jeff Geerling
+# @author Christos Kanellopoulos
 
 # Warn that some commands will not be run if the script is not run as root.
 if [[ $EUID -ne 0 ]]; then

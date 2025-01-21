@@ -104,7 +104,7 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ###############################################################################
-# Screen                                                                      #
+# Screen & Spaces                                                             #
 ###############################################################################
 
 # Save screenshots to Downloads folder.
@@ -115,6 +115,9 @@ defaults write com.apple.screencapture type -string "png"
 
 # Disable shadow in screenshots
 defaults write com.apple.screencapture disable-shadow -bool true
+
+# Added for Aerospace: https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces
+defaults write com.apple.spaces spans-displays -bool true
 
 ###############################################################################
 # Finder                                                                      #
@@ -232,6 +235,9 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 # Bottom left screen corner → Desktop
 defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# For Aerospace: https://nikitabobko.github.io/AeroSpace/guide#a-note-on-mission-control
+defaults write com.apple.dock expose-group-apps -bool true && killall Dock
 
 ###############################################################################
 # Safari & WebKit                                                             #

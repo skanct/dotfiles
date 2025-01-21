@@ -9,7 +9,7 @@ end
 
 -- config.color_scheme = "Catppuccin Mocha"
 config.color_scheme = "Catppuccin Macchiato"
--- config.font = wezterm.font("JetBrains Mono NL")
+-- config.font = wezterm.font("SF Pro Display")
 config.font_size = 16
 config.window_decorations = "RESIZE"
 config.mouse_bindings = {
